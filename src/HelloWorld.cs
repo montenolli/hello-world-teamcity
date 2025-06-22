@@ -72,6 +72,22 @@ namespace MyApp
                 Console.WriteLine(String.Format("idx {0}: no such element in DataStore", index));
             }
         }
+		
+		public static void PrintElement2(Library.DataStore<int, string> Store, int index)
+        {
+            Library.Pair<int, string>? element = Store.GetElementByIndex(index);
+            if (element is Library.Pair<int, string> valueOfElment)
+            {
+                Logger.Trace("idx {0}: found element", index);
+                Console.WriteLine(String.Format("idx {0}: key {1}, value {2}", index,
+                    element.GetKey(), element.GetValue()));
+            }
+            else
+            {
+                Logger.Warn("idx {0}: no such element in DataStore", index);
+                Console.WriteLine(String.Format("idx {0}: no such element in DataStore", index));
+            }
+        }
 
     } // class HelloWorld
 
