@@ -50,12 +50,12 @@ namespace MyApp
                 myData.Add(i, text);
             }
 
-            PrintElement(myData, 42);
+            //PrintElement(myData, 42);
             PrintElement(myData, 100);
-            PrintElement(myData, 101);
+            //PrintElement(myData, 101);
             PrintElement(myData, 102);
 
-            Logger.Info("Terminating program ...");
+            //Logger.Info("Terminating program ...");
         }
         public static void PrintElement(Library.DataStore<int, string> Store, int index)
         {
