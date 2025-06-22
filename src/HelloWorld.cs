@@ -37,11 +37,11 @@ namespace MyApp
             Console.WriteLine(String.Format("{0} plus {1} makes {2}", x, y, sum));
             Console.WriteLine(String.Format("{0} times {1} makes {2}", x, y, prod));
 
-			//int variable = 200;
-			//int variable2 = 300;
-			//int sum2 = variable + variable2;
+			int variable = 200;
+			int variable2 = 300;
+			int sum2 = variable + variable2;
 			
-			//Console.WriteLine(String.Format("{0} plus {1} makes {2}", variable, variable2, sum2));
+			Console.WriteLine(String.Format("{0} plus {1} makes {2}", variable, variable2, sum2));
 
             Library.DataStore<int, string> myData = new Library.DataStore<int, string>();
             for (int i = 0; i < 100; i++)
@@ -50,12 +50,12 @@ namespace MyApp
                 myData.Add(i, text);
             }
 
-            //PrintElement(myData, 42);
+            PrintElement(myData, 42);
             PrintElement(myData, 100);
-            //PrintElement(myData, 101);
+            PrintElement(myData, 101);
             PrintElement(myData, 102);
 
-            //Logger.Info("Terminating program ...");
+            Logger.Info("Terminating program ...");
         }
         public static void PrintElement(Library.DataStore<int, string> Store, int index)
         {
