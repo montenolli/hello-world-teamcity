@@ -37,6 +37,11 @@ namespace MyApp
             Console.WriteLine(String.Format("{0} plus {1} makes {2}", x, y, sum));
             Console.WriteLine(String.Format("{0} times {1} makes {2}", x, y, prod));
 
+			int variable = 200;
+			int variable2 = 300;
+			int sum2 = variable + variable2;
+			
+			Console.WriteLine(String.Format("{0} plus {1} makes {2}", variable, variable2, sum2));
 
             Library.DataStore<int, string> myData = new Library.DataStore<int, string>();
             for (int i = 0; i < 100; i++)
